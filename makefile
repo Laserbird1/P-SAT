@@ -5,7 +5,7 @@ CC=gcc
 CPP=g++
 
 CCFLAGS =-g
-CPPFLAGS=-g
+CPPFLAGS=-g -std=c++14
 
 SRC_FILES=$(wildcard $(SRC)/*.c $(SRC)/*.cpp)
 _EXEC=$(SRC_FILES:%.c=%)
@@ -39,7 +39,7 @@ clean:
 
 $(KNUTH):
 	cd $(K_DIR) && $(MAKE)
-	
+
 tests:
 	cd test && $(MAKE)
 
