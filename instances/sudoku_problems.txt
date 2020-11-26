@@ -1,0 +1,119 @@
+Sample 4x4 problem
+
+12xx
+xx2x
+x1xx
+xxx2
+
+1 1 1
+2 1 2
+3 2 2
+2 3 1
+4 4 2
+0
+
+Knuth p.10 instance a
+
+xx3x1xxxx
+415xxxx9x
+5xxx8xxx9
+x7x9xxx32
+x38xx4x6x
+xxx26x4x3
+xxx3xxxx8
+32xxx795x
+
+3 1 3
+5 1 1
+1 2 4
+2 2 1
+3 2 5
+8 2 9
+1 3 2
+3 3 6
+4 3 5
+7 3 3
+1 4 5
+5 4 8
+9 4 9
+2 5 7
+4 5 9
+8 5 3
+9 5 2
+2 6 3
+3 6 8
+6 6 4
+8 6 6
+4 7 2
+5 7 6
+7 7 4
+9 7 3
+4 8 3
+9 8 8
+1 9 3
+2 9 2
+6 9 7
+7 9 9
+8 9 5
+0
+
+Knuth p.10 instance b
+
+xxxxxx3xx
+1xx4xxxxx
+xxxxxx1x5
+9xxxxxxxx
+xxxxx26xx
+xxxx53xxx
+x5x8xxxxx
+xxx9xxx7x
+x83xxxx4x
+
+7 1 3
+1 2 1
+4 2 4
+7 3 1
+9 3 5
+1 4 9
+6 5 2
+7 5 6
+5 6 5
+6 6 3
+2 7 5
+4 7 8
+4 8 9
+8 8 7
+2 9 8
+3 9 3
+8 9 4
+0
+
+Knuth p.10 instance c
+
+x3xx1xxxx
+xxx4xx1xx
+x5xxxxx9x
+2xxxxx6x4
+xxxx35xxx
+1xxxxxxxx
+4xx6xxxxx
+xxxxxxx5x
+x9xxxxxxx
+
+2 1 3
+5 1 1
+4 2 4
+7 2 1
+2 3 5
+8 3 9
+1 4 2
+7 4 6
+9 4 4
+5 5 3
+6 5 5
+1 6 1
+1 7 4
+4 7 6
+8 8 5
+2 9 9
+0
