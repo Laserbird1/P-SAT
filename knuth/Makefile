@@ -20,7 +20,7 @@ $(DESTDIR)/%: $(SRCDIR)/%.c
 	$(CC) $(CCFLAGS) $(LDFLAGS) $< -o $@
 
 $(SRCDIR)/%.c:$(SRCDIR)/%.w
-	ctangle $(CWEBFILE)
+	ctangle $<
 
 clean:
 	rm -f $(EXEC) $(SRC)
