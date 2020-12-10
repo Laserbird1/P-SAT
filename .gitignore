@@ -6,3 +6,4 @@ src/cars/node_modules/
 knuth/cweb/
 knuth/sgb/
 knuth/*.tar.gz
+test/results/*
