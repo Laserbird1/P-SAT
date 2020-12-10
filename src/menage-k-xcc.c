@@ -23,7 +23,7 @@ main(int argc, char *argv[])
     nn = n + n;
     if (n < 3)
     {
-        fprintf(stderr, "Sorry, the probleme des menages exists only for n >=3\n");
+        fprintf(stderr, "Sorry, the probleme des menages exists only for n >= 3\n");
         exit(-2);
     }
 

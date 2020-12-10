@@ -1,2 +1,4 @@
 all:
-	echo $(shell pwd)
+	sh instances.sh
+clean:
+	rm -f results/*
