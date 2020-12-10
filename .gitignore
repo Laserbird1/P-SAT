@@ -3,3 +3,6 @@ bin/*
 **/.DS_Store
 src/cars/node_modules/
 .vscode/
+knuth/cweb/
+knuth/sgb/
+knuth/*.tar.gz
