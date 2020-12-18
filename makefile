@@ -4,7 +4,7 @@ BIN=bin
 CC=gcc
 CPP=g++
 
-CCFLAGS =-O3
+CCFLAGS=-O3
 CPPFLAGS=-O3 -std=c++14
 
 SRC_FILES=$(wildcard $(SRC)/*.c $(SRC)/*.cpp)
@@ -13,10 +13,12 @@ __EXEC=$(_EXEC:%.cpp=%)
 EXEC=$(__EXEC:$(SRC)/%=$(BIN)/%)
 
 K_DIR=knuth
-K_FILES=$(wildcard $(K_DIR)/*.w)
-KNUTH=$(K_FILES:$(K_DIR)/%.w=$(BIN)/%)
 
-all:$(BIN) $(KNUTH) $(EXEC)
+.PHONY: all clean test instances analyse
+.SILENT: all
+
+all:$(BIN) $(EXEC)
+	cd $(K_DIR) && $(MAKE)
 
 $(BIN)/%:$(SRC)/%.c
 	$(CC) $(CCFLAGS) $< -o $@
@@ -34,16 +36,29 @@ list:
 	@echo
 	@echo KNUTH := $(KNUTH)
 
-clean: FORCE
+clean:
 	rm -rf $(BIN)
-	cd test && $(MAKE) clean
+	rm -f test/results/*
 	cd knuth && $(MAKE) clean
 
-$(KNUTH):
-	cd $(K_DIR) && $(MAKE)
+test:
+	cd test && source instances.sh
 
-test: FORCE
-	cd test && $(MAKE)
+analyse: 
+	cd test && python analyse.py
 
-FORCE:
+# rules for making instances from sources
+instances: all menage langford
+
+menage: 
+	$(BIN)/menage-k-xcc 5 > instances/menage5.txt
+	$(BIN)/menage-k-xcc 11 > instances/menage11.txt
+	$(BIN)/menage-k-xcc 12 > instances/menage12.txt
+	$(BIN)/menage-k-xcc 13 > instances/menage13.txt
+	$(BIN)/menage-k-xcc 14 > instances/menage14.txt
+
+langford:
+	$(BIN)/langford-xcc 11 > instances/langford11.txt
+	$(BIN)/langford-xcc 12 > instances/langford12.txt
+	$(BIN)/langford-xcc 15 > instances/langford15.txt
 

@@ -3,7 +3,7 @@ CC=gcc
 LIBDIR=/usr/local/lib
 INCDIR=/usr/local/sgb/include
 LDFLAGS=-L$(LIBDIR) -lgb
-CCFLAGS=-g -Wall -I$(INCDIR)
+CCFLAGS=-O3 -Wall -I$(INCDIR)
 
 DESTDIR=../bin
 SRCDIR=.
@@ -12,7 +12,8 @@ FILE=$(wildcard $(SRCDIR)/*.w)
 EXEC=$(FILE:$(SRCDIR)/%.w=$(DESTDIR)/%)
 SRC=$(FILE:%.w=%.c)
 
-.PHONY: all test
+.PHONY: all list
+.SILENT: all
 
 all: $(EXEC)
 
@@ -44,7 +45,7 @@ install_cweb:
 	@echo
 	@echo "-- Now follow cweb installation guide"
 
-test:
+list:
 	@echo FILES := $(FILE)
 	@echo
 	@echo SRC := $(SRC)

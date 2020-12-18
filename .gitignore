@@ -7,3 +7,6 @@ knuth/cweb/
 knuth/sgb/
 knuth/*.tar.gz
 test/results/*
+test/results_archive/*
+test/.ipynb_checkpoints/*
+test/samples/*
