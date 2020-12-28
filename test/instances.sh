@@ -7,6 +7,7 @@ nwarmup=1
 minruns=10
 destdir=results_tmp
 mkdir ${destdir} 2> /dev/null
+
 for path in ../instances/*.txt ;
 do
     name=$(basename $path)
@@ -20,7 +21,7 @@ do
         --time-unit millisecond \
         --warmup $nwarmup \
         --cleanup 'rm -f {ex}_{file}' \
-        --prepare "if [ {ex} = dlx2 ]; then cat {path} | ../bin/converter s2k > {ex}_{file} ; else cp {path} {ex}_{file}; fi" \
+        --prepare "if [ {ex} = dlx2 ]; then cat {path} | ../bin/converter_v2 s2k > {ex}_{file} ; else cp {path} {ex}_{file}; fi" \
         --parameter-list ex 'dlx2','xcc-with-sparse-sets' \
         --parameter-list path $path \
         --parameter-list file $name ;
