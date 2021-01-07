@@ -2,5 +2,5 @@
   "dependencies": {
     "js-combinatorics": "^1.4.5"
   },
-  "type":"module"
+  "type": "module"
 }

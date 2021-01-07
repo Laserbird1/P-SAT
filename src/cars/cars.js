@@ -33,10 +33,10 @@ try{
 }
 */
 for(let i=1; i<101; i++){
-    let n= Math.random()*6+2;
-    let m= Math.random()*4+2;
-    let maxq= Math.random()*4+1;
-    let maxn= Math.random()*6+1;
+    let n= Math.random()*5+4;
+    let m= Math.random()*7+2;
+    let maxq= Math.random()*5+3;
+    let maxn= Math.random()*8+3;
     let outputName = "./instances/cars"+i+".txt"
 
 
@@ -169,7 +169,10 @@ console.log(primaries);
     console.log(cars)
     console.log("\n")*/
     //write head (nb of items + nb of secondaries + nb of options)
+    let writeStream = fs.createWriteStream(outputName);
     let text = String(Object.keys(primaries).length+Object.keys(secondaries).length)+" "+Object.keys(secondaries).length+" "+options.length+"\n";
+    writeStream.write(text);
+
     //append the list of secondaries
     let orderedSec=[];
     for(let [key, val] of Object.entries(secondaries)){
@@ -182,7 +185,7 @@ console.log(primaries);
             objval = objval.slice(0, -1);
         }
         objval=objval.replace("  "," ");
-        text+= objval+"\n";
+        writeStream.write(objval+"\n");
     }
     //then append the list of primaries
     let orderedPrim=[];
@@ -196,7 +199,7 @@ console.log(primaries);
             objval = objval.slice(0, -1);
         }
         objval=objval.replace("  "," ")
-        text+= objval+"\n";
+        writeStream.write(objval+"\n");
     }
     for(let opt of options){
         let objval = String(opt);
@@ -204,11 +207,16 @@ console.log(primaries);
             objval = objval.slice(0, -1);
         }
         objval=objval.replace("  "," ")
-        text+= objval+"\n";
+        writeStream.write(objval+"\n");
     }
-    
+    /*
     fs.writeFile(outputName, text, function (err) {
         if (err) throw err;
         console.log('Saved!');
+    });*/
+    writeStream.on('finish', () => {
+        console.log('Saved !');
     });
+
+    writeStream.end();
 }
