@@ -4,7 +4,7 @@
 # if [ ! which timeout > /dev/null ]; then {brew,apt..} install coreutils; fi
 
 nwarmup=1
-minruns=10
+minruns=1
 destdir=results_tmp
 mkdir ${destdir} 2> /dev/null
 

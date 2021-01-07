@@ -14,7 +14,7 @@ EXEC=$(__EXEC:$(SRC)/%=$(BIN)/%)
 
 K_DIR=knuth
 
-.PHONY: all clean test instances analyse
+.PHONY: all clean benchmarks instances analyse
 .SILENT: all
 
 all:$(BIN) $(EXEC)
@@ -41,7 +41,7 @@ clean:
 	rm -f test/results/*
 	cd knuth && $(MAKE) clean
 
-test:
+benchmarks:
 	cd test && source instances.sh
 
 analyse: 
