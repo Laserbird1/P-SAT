@@ -18,7 +18,7 @@ SRC=$(FILE:%.w=%.c)
 all: $(EXEC)
 
 $(DESTDIR)/%: $(SRCDIR)/%.c
-	$(CC) $(CCFLAGS) $(LDFLAGS) $< -o $@
+	$(CC) $(CCFLAGS) $(LDFLAGS) $< -o $@  /usr/local/lib/libgb.a
 
 $(SRCDIR)/%.c:$(SRCDIR)/%.w
 	ctangle $<
@@ -39,7 +39,7 @@ install_sgb:
 
 install_cweb:
 	@echo "-- Fetching cweb utilities"
-	curl cweb.tar.gz ftp://ftp.cs.stanford.edu/pub/cweb/cweb.tar.gz
+	curl -o cweb.tar.gz ftp://ftp.cs.stanford.edu/pub/cweb/cweb.tar.gz
 	mkdir cweb
 	tar -x -C cweb -f cweb.tar.gz
 	@echo

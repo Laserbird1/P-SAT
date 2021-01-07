@@ -42,7 +42,7 @@ clean:
 	cd knuth && $(MAKE) clean
 
 benchmarks:
-	cd test && source instances.sh
+	cd test && sh instances.sh
 
 analyse: 
 	cd test && python analyse.py
