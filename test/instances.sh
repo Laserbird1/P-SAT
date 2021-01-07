@@ -4,11 +4,12 @@
 # if [ ! which timeout > /dev/null ]; then {brew,apt..} install coreutils; fi
 
 nwarmup=1
-minruns=1
+minruns=2
 destdir=results_tmp
 mkdir ${destdir} 2> /dev/null
+first=1 #0 for yes
 
-for path in ../instances/*.txt ;
+for path in ../instances/cars/*.txt ;
 do
     name=$(basename $path)
     jsonname=$(echo $name | cut -f1 -d'.').json
