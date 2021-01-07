@@ -9,12 +9,12 @@ var argv = process.argv.slice(2);
 //m: number of features
 //q: max q for a feature
 //maxn: maximum number of cars of each type;
-
+/*
 let n=0;
 let m=0;
 let maxq=0;
 let maxn=0;
-let outputName = "instance.txt"
+let outputName = "instance.txt"*/
 /*
 try{
     n=Number(argv[0]);
@@ -33,8 +33,8 @@ try{
 }
 */
 for(let i=1; i<101; i++){
-    let n= Math.random()*6+1;
-    let m= Math.random()*4+1;
+    let n= Math.random()*6+2;
+    let m= Math.random()*4+2;
     let maxq= Math.random()*4+1;
     let maxn= Math.random()*6+1;
     let outputName = "./instances/cars"+i+".txt"
@@ -177,7 +177,12 @@ console.log(primaries);
     }
     orderedSec.sort((a, b)=> a.val-b.val)
     for(let obj of orderedSec){
-        text+= obj.val+"\n";
+        let objval = String(obj.val);
+        if(objval.slice(-1)===" "){
+            objval = objval.slice(0, -1);
+        }
+        objval=objval.replace("  "," ");
+        text+= objval+"\n";
     }
     //then append the list of primaries
     let orderedPrim=[];
@@ -186,11 +191,22 @@ console.log(primaries);
     }
     orderedPrim.sort((a, b)=> a.val-b.val)
     for(let obj of orderedPrim){
-        text+= obj.val+"\n";
+        let objval = String(obj.val);
+        if(objval.slice(-1)===" "){
+            objval = objval.slice(0, -1);
+        }
+        objval=objval.replace("  "," ")
+        text+= objval+"\n";
     }
     for(let opt of options){
-        text+= opt+"\n";
+        let objval = String(opt);
+        if(objval.slice(-1)===" "){
+            objval = objval.slice(0, -1);
+        }
+        objval=objval.replace("  "," ")
+        text+= objval+"\n";
     }
+    
     fs.writeFile(outputName, text, function (err) {
         if (err) throw err;
         console.log('Saved!');
