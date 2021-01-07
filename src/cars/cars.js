@@ -15,6 +15,7 @@ let m=0;
 let maxq=0;
 let maxn=0;
 let outputName = "instance.txt"
+/*
 try{
     n=Number(argv[0]);
     m=Number(argv[1]);
@@ -30,6 +31,14 @@ try{
     console.error(e);
     exit();
 }
+*/
+for(let i=1; i<101; i++){
+    let n= Math.random()*6+1;
+    let m= Math.random()*4+1;
+    let maxq= Math.random()*4+1;
+    let maxn= Math.random()*6+1;
+    let outputName = "./instances/cars"+i+".txt"
+
 
 let asciiCode = 65;
 let cars = {};
@@ -186,3 +195,4 @@ console.log(primaries);
         if (err) throw err;
         console.log('Saved!');
     });
+}
