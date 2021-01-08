@@ -44,8 +44,11 @@ clean:
 benchmarks:
 	cd test && sh instances.sh
 
-analyse: 
-	cd test && python analyse.py
+test/analyse.py: test/analyse.ipynb
+	jupyter nbconvert --to script test/analyse.ipynb
+
+analyse: test/analyse.py
+	cd test && python3 analyse.py
 
 # rules for making instances from sources
 instances: all menage langford
