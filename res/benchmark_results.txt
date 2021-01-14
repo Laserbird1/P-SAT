@@ -1,0 +1,528 @@
+Benchmark #1: cat dlx2_cars-3-3-3-4.txt | timeout 10m ../bin/dlx2 || [ $? = 124 ]
+  Time (mean ± σ):     116.2 ms ±   2.1 ms    [User: 111.6 ms, System: 3.7 ms]
+  Range (min … max):   113.6 ms … 120.6 ms    20 runs
+ 
+Benchmark #2: cat xcc-with-sparse-sets_cars-3-3-3-4.txt | timeout 10m ../bin/xcc-with-sparse-sets || [ $? = 124 ]
+  Time (mean ± σ):     451.6 ms ±   6.6 ms    [User: 445.9 ms, System: 4.0 ms]
+  Range (min … max):   444.4 ms … 463.7 ms    6 runs
+ 
+Benchmark #3: cat xcc-with-dancing-cells_cars-3-3-3-4.txt | timeout 10m ../bin/xcc-with-dancing-cells || [ $? = 124 ]
+  Time (mean ± σ):     467.4 ms ±   4.4 ms    [User: 462.5 ms, System: 3.5 ms]
+  Range (min … max):   462.4 ms … 472.9 ms    6 runs
+ 
+Summary
+  'cat dlx2_cars-3-3-3-4.txt | timeout 10m ../bin/dlx2 || [ $? = 124 ]' ran
+    3.89 ± 0.09 times faster than 'cat xcc-with-sparse-sets_cars-3-3-3-4.txt | timeout 10m ../bin/xcc-with-sparse-sets || [ $? = 124 ]'
+    4.02 ± 0.08 times faster than 'cat xcc-with-dancing-cells_cars-3-3-3-4.txt | timeout 10m ../bin/xcc-with-dancing-cells || [ $? = 124 ]'
+Benchmark #1: cat dlx2_cars-7-5-5-10.txt | timeout 10m ../bin/dlx2 || [ $? = 124 ]
+  Time (mean ± σ):     600010.4 ms ±   3.5 ms    [User: 599.490 s, System: 0.222 s]
+  Range (min … max):   600007.9 ms … 600012.9 ms    2 runs
+ 
+Benchmark #2: cat xcc-with-sparse-sets_cars-7-5-5-10.txt | timeout 10m ../bin/xcc-with-sparse-sets || [ $? = 124 ]
+  Time (mean ± σ):     600011.3 ms ±   5.5 ms    [User: 599.486 s, System: 0.234 s]
+  Range (min … max):   600007.4 ms … 600015.3 ms    2 runs
+ 
+Benchmark #3: cat xcc-with-dancing-cells_cars-7-5-5-10.txt | timeout 10m ../bin/xcc-with-dancing-cells || [ $? = 124 ]
+  Time (mean ± σ):     600013.4 ms ±   2.3 ms    [User: 599.511 s, System: 0.220 s]
+  Range (min … max):   600011.8 ms … 600015.0 ms    2 runs
+ 
+Summary
+  'cat dlx2_cars-7-5-5-10.txt | timeout 10m ../bin/dlx2 || [ $? = 124 ]' ran
+    1.00 ± 0.00 times faster than 'cat xcc-with-sparse-sets_cars-7-5-5-10.txt | timeout 10m ../bin/xcc-with-sparse-sets || [ $? = 124 ]'
+    1.00 ± 0.00 times faster than 'cat xcc-with-dancing-cells_cars-7-5-5-10.txt | timeout 10m ../bin/xcc-with-dancing-cells || [ $? = 124 ]'
+Benchmark #1: cat dlx2_cars-7-5-5-8.txt | timeout 10m ../bin/dlx2 || [ $? = 124 ]
+  Time (mean ± σ):     600014.2 ms ±   0.4 ms    [User: 599.384 s, System: 0.361 s]
+  Range (min … max):   600013.9 ms … 600014.5 ms    2 runs
+ 
+Benchmark #2: cat xcc-with-sparse-sets_cars-7-5-5-8.txt | timeout 10m ../bin/xcc-with-sparse-sets || [ $? = 124 ]
+  Time (mean ± σ):     600021.9 ms ±   6.1 ms    [User: 598.096 s, System: 0.560 s]
+  Range (min … max):   600017.6 ms … 600026.2 ms    2 runs
+ 
+Benchmark #3: cat xcc-with-dancing-cells_cars-7-5-5-8.txt | timeout 10m ../bin/xcc-with-dancing-cells || [ $? = 124 ]
+  Time (mean ± σ):     600018.0 ms ±   2.3 ms    [User: 598.184 s, System: 0.893 s]
+  Range (min … max):   600016.4 ms … 600019.7 ms    2 runs
+ 
+Summary
+  'cat dlx2_cars-7-5-5-8.txt | timeout 10m ../bin/dlx2 || [ $? = 124 ]' ran
+    1.00 ± 0.00 times faster than 'cat xcc-with-dancing-cells_cars-7-5-5-8.txt | timeout 10m ../bin/xcc-with-dancing-cells || [ $? = 124 ]'
+    1.00 ± 0.00 times faster than 'cat xcc-with-sparse-sets_cars-7-5-5-8.txt | timeout 10m ../bin/xcc-with-sparse-sets || [ $? = 124 ]'
+Benchmark #1: cat dlx2_cluster1.txt | timeout 10m ../bin/dlx2 || [ $? = 124 ]
+  Time (mean ± σ):       7.3 ms ±   3.3 ms    [User: 3.1 ms, System: 3.8 ms]
+  Range (min … max):     6.0 ms …  21.2 ms    20 runs
+ 
+  Warning: Statistical outliers were detected. Consider re-running this benchmark on a quiet PC without any interferences from other programs. It might help to use the '--warmup' or '--prepare' options.
+ 
+Benchmark #2: cat xcc-with-sparse-sets_cluster1.txt | timeout 10m ../bin/xcc-with-sparse-sets || [ $? = 124 ]
+  Time (mean ± σ):       6.1 ms ±   0.2 ms    [User: 2.8 ms, System: 3.0 ms]
+  Range (min … max):     5.8 ms …   6.7 ms    20 runs
+ 
+Benchmark #3: cat xcc-with-dancing-cells_cluster1.txt | timeout 10m ../bin/xcc-with-dancing-cells || [ $? = 124 ]
+  Time (mean ± σ):       6.2 ms ±   0.3 ms    [User: 2.9 ms, System: 3.1 ms]
+  Range (min … max):     5.8 ms …   6.7 ms    20 runs
+ 
+Summary
+  'cat xcc-with-sparse-sets_cluster1.txt | timeout 10m ../bin/xcc-with-sparse-sets || [ $? = 124 ]' ran
+    1.01 ± 0.06 times faster than 'cat xcc-with-dancing-cells_cluster1.txt | timeout 10m ../bin/xcc-with-dancing-cells || [ $? = 124 ]'
+    1.19 ± 0.54 times faster than 'cat dlx2_cluster1.txt | timeout 10m ../bin/dlx2 || [ $? = 124 ]'
+Benchmark #1: cat dlx2_cluster2.txt | timeout 10m ../bin/dlx2 || [ $? = 124 ]
+  Time (mean ± σ):      12.5 ms ±   0.4 ms    [User: 8.9 ms, System: 3.0 ms]
+  Range (min … max):    12.0 ms …  13.1 ms    20 runs
+ 
+Benchmark #2: cat xcc-with-sparse-sets_cluster2.txt | timeout 10m ../bin/xcc-with-sparse-sets || [ $? = 124 ]
+  Time (mean ± σ):      14.6 ms ±   4.3 ms    [User: 9.3 ms, System: 4.3 ms]
+  Range (min … max):    11.3 ms …  30.0 ms    20 runs
+ 
+Benchmark #3: cat xcc-with-dancing-cells_cluster2.txt | timeout 10m ../bin/xcc-with-dancing-cells || [ $? = 124 ]
+  Time (mean ± σ):      13.3 ms ±   0.9 ms    [User: 9.5 ms, System: 3.4 ms]
+  Range (min … max):    12.2 ms …  15.2 ms    20 runs
+ 
+Summary
+  'cat dlx2_cluster2.txt | timeout 10m ../bin/dlx2 || [ $? = 124 ]' ran
+    1.06 ± 0.08 times faster than 'cat xcc-with-dancing-cells_cluster2.txt | timeout 10m ../bin/xcc-with-dancing-cells || [ $? = 124 ]'
+    1.17 ± 0.35 times faster than 'cat xcc-with-sparse-sets_cluster2.txt | timeout 10m ../bin/xcc-with-sparse-sets || [ $? = 124 ]'
+Benchmark #1: cat dlx2_cluster3.txt | timeout 10m ../bin/dlx2 || [ $? = 124 ]
+  Time (mean ± σ):      69.2 ms ±   2.5 ms    [User: 66.6 ms, System: 3.1 ms]
+  Range (min … max):    66.2 ms …  76.4 ms    20 runs
+ 
+Benchmark #2: cat xcc-with-sparse-sets_cluster3.txt | timeout 10m ../bin/xcc-with-sparse-sets || [ $? = 124 ]
+  Time (mean ± σ):      57.3 ms ±   2.1 ms    [User: 55.2 ms, System: 2.9 ms]
+  Range (min … max):    54.7 ms …  63.4 ms    20 runs
+ 
+Benchmark #3: cat xcc-with-dancing-cells_cluster3.txt | timeout 10m ../bin/xcc-with-dancing-cells || [ $? = 124 ]
+  Time (mean ± σ):      61.5 ms ±   1.2 ms    [User: 59.5 ms, System: 2.7 ms]
+  Range (min … max):    60.0 ms …  65.2 ms    20 runs
+ 
+Summary
+  'cat xcc-with-sparse-sets_cluster3.txt | timeout 10m ../bin/xcc-with-sparse-sets || [ $? = 124 ]' ran
+    1.07 ± 0.05 times faster than 'cat xcc-with-dancing-cells_cluster3.txt | timeout 10m ../bin/xcc-with-dancing-cells || [ $? = 124 ]'
+    1.21 ± 0.06 times faster than 'cat dlx2_cluster3.txt | timeout 10m ../bin/dlx2 || [ $? = 124 ]'
+Benchmark #1: cat dlx2_cluster4.txt | timeout 10m ../bin/dlx2 || [ $? = 124 ]
+  Time (mean ± σ):     1669.6 ms ±  20.7 ms    [User: 1.661 s, System: 0.006 s]
+  Range (min … max):   1655.0 ms … 1684.2 ms    2 runs
+ 
+Benchmark #2: cat xcc-with-sparse-sets_cluster4.txt | timeout 10m ../bin/xcc-with-sparse-sets || [ $? = 124 ]
+  Time (mean ± σ):     1482.4 ms ±   2.6 ms    [User: 1.475 s, System: 0.004 s]
+  Range (min … max):   1480.5 ms … 1484.2 ms    2 runs
+ 
+Benchmark #3: cat xcc-with-dancing-cells_cluster4.txt | timeout 10m ../bin/xcc-with-dancing-cells || [ $? = 124 ]
+  Time (mean ± σ):     1541.2 ms ±  17.9 ms    [User: 1.532 s, System: 0.005 s]
+  Range (min … max):   1528.5 ms … 1553.9 ms    2 runs
+ 
+Summary
+  'cat xcc-with-sparse-sets_cluster4.txt | timeout 10m ../bin/xcc-with-sparse-sets || [ $? = 124 ]' ran
+    1.04 ± 0.01 times faster than 'cat xcc-with-dancing-cells_cluster4.txt | timeout 10m ../bin/xcc-with-dancing-cells || [ $? = 124 ]'
+    1.13 ± 0.01 times faster than 'cat dlx2_cluster4.txt | timeout 10m ../bin/dlx2 || [ $? = 124 ]'
+Benchmark #1: cat dlx2_cluster5.txt | timeout 10m ../bin/dlx2 || [ $? = 124 ]
+  Time (mean ± σ):     4657.1 ms ±  20.4 ms    [User: 4.640 s, System: 0.009 s]
+  Range (min … max):   4642.7 ms … 4671.6 ms    2 runs
+ 
+Benchmark #2: cat xcc-with-sparse-sets_cluster5.txt | timeout 10m ../bin/xcc-with-sparse-sets || [ $? = 124 ]
+  Time (mean ± σ):     4671.6 ms ± 113.3 ms    [User: 4.629 s, System: 0.016 s]
+  Range (min … max):   4591.5 ms … 4751.7 ms    2 runs
+ 
+Benchmark #3: cat xcc-with-dancing-cells_cluster5.txt | timeout 10m ../bin/xcc-with-dancing-cells || [ $? = 124 ]
+  Time (mean ± σ):     4427.3 ms ±  80.7 ms    [User: 4.365 s, System: 0.025 s]
+  Range (min … max):   4370.2 ms … 4484.3 ms    2 runs
+ 
+Summary
+  'cat xcc-with-dancing-cells_cluster5.txt | timeout 10m ../bin/xcc-with-dancing-cells || [ $? = 124 ]' ran
+    1.05 ± 0.02 times faster than 'cat dlx2_cluster5.txt | timeout 10m ../bin/dlx2 || [ $? = 124 ]'
+    1.06 ± 0.03 times faster than 'cat xcc-with-sparse-sets_cluster5.txt | timeout 10m ../bin/xcc-with-sparse-sets || [ $? = 124 ]'
+Benchmark #1: cat dlx2_cluster6.txt | timeout 10m ../bin/dlx2 || [ $? = 124 ]
+  Time (mean ± σ):     60874.0 ms ±  71.4 ms    [User: 60.705 s, System: 0.069 s]
+  Range (min … max):   60823.5 ms … 60924.4 ms    2 runs
+ 
+Benchmark #2: cat xcc-with-sparse-sets_cluster6.txt | timeout 10m ../bin/xcc-with-sparse-sets || [ $? = 124 ]
+  Time (mean ± σ):     63937.2 ms ± 713.0 ms    [User: 63.772 s, System: 0.071 s]
+  Range (min … max):   63433.0 ms … 64441.4 ms    2 runs
+ 
+Benchmark #3: cat xcc-with-dancing-cells_cluster6.txt | timeout 10m ../bin/xcc-with-dancing-cells || [ $? = 124 ]
+  Time (mean ± σ):     68893.3 ms ±   9.0 ms    [User: 68.726 s, System: 0.074 s]
+  Range (min … max):   68886.9 ms … 68899.6 ms    2 runs
+ 
+Summary
+  'cat dlx2_cluster6.txt | timeout 10m ../bin/dlx2 || [ $? = 124 ]' ran
+    1.05 ± 0.01 times faster than 'cat xcc-with-sparse-sets_cluster6.txt | timeout 10m ../bin/xcc-with-sparse-sets || [ $? = 124 ]'
+    1.13 ± 0.00 times faster than 'cat xcc-with-dancing-cells_cluster6.txt | timeout 10m ../bin/xcc-with-dancing-cells || [ $? = 124 ]'
+Benchmark #1: cat dlx2_ex94.txt | timeout 10m ../bin/dlx2 || [ $? = 124 ]
+  Time (mean ± σ):       7.9 ms ±   0.5 ms    [User: 4.2 ms, System: 3.1 ms]
+  Range (min … max):     7.3 ms …   9.0 ms    20 runs
+ 
+Benchmark #2: cat xcc-with-sparse-sets_ex94.txt | timeout 10m ../bin/xcc-with-sparse-sets || [ $? = 124 ]
+  Time (mean ± σ):       7.8 ms ±   0.6 ms    [User: 3.9 ms, System: 3.2 ms]
+  Range (min … max):     7.0 ms …   9.5 ms    20 runs
+ 
+Benchmark #3: cat xcc-with-dancing-cells_ex94.txt | timeout 10m ../bin/xcc-with-dancing-cells || [ $? = 124 ]
+  Time (mean ± σ):       7.7 ms ±   0.5 ms    [User: 4.0 ms, System: 3.2 ms]
+  Range (min … max):     7.0 ms …   8.7 ms    20 runs
+ 
+Summary
+  'cat xcc-with-dancing-cells_ex94.txt | timeout 10m ../bin/xcc-with-dancing-cells || [ $? = 124 ]' ran
+    1.01 ± 0.10 times faster than 'cat xcc-with-sparse-sets_ex94.txt | timeout 10m ../bin/xcc-with-sparse-sets || [ $? = 124 ]'
+    1.03 ± 0.09 times faster than 'cat dlx2_ex94.txt | timeout 10m ../bin/dlx2 || [ $? = 124 ]'
+Benchmark #1: cat dlx2_graceful13.txt | timeout 10m ../bin/dlx2 || [ $? = 124 ]
+  Time (mean ± σ):     29402.7 ms ±  55.5 ms    [User: 29.332 s, System: 0.032 s]
+  Range (min … max):   29363.5 ms … 29442.0 ms    2 runs
+ 
+Benchmark #2: cat xcc-with-sparse-sets_graceful13.txt | timeout 10m ../bin/xcc-with-sparse-sets || [ $? = 124 ]
+  Time (mean ± σ):     33385.5 ms ± 146.2 ms    [User: 33.298 s, System: 0.041 s]
+  Range (min … max):   33282.1 ms … 33488.9 ms    2 runs
+ 
+Benchmark #3: cat xcc-with-dancing-cells_graceful13.txt | timeout 10m ../bin/xcc-with-dancing-cells || [ $? = 124 ]
+  Time (mean ± σ):     33227.6 ms ± 516.3 ms    [User: 33.142 s, System: 0.040 s]
+  Range (min … max):   32862.5 ms … 33592.7 ms    2 runs
+ 
+Summary
+  'cat dlx2_graceful13.txt | timeout 10m ../bin/dlx2 || [ $? = 124 ]' ran
+    1.13 ± 0.02 times faster than 'cat xcc-with-dancing-cells_graceful13.txt | timeout 10m ../bin/xcc-with-dancing-cells || [ $? = 124 ]'
+    1.14 ± 0.01 times faster than 'cat xcc-with-sparse-sets_graceful13.txt | timeout 10m ../bin/xcc-with-sparse-sets || [ $? = 124 ]'
+Benchmark #1: cat dlx2_graceful5.txt | timeout 10m ../bin/dlx2 || [ $? = 124 ]
+  Time (mean ± σ):       6.0 ms ±   0.6 ms    [User: 2.5 ms, System: 3.1 ms]
+  Range (min … max):     5.3 ms …   7.7 ms    20 runs
+ 
+Benchmark #2: cat xcc-with-sparse-sets_graceful5.txt | timeout 10m ../bin/xcc-with-sparse-sets || [ $? = 124 ]
+  Time (mean ± σ):       6.1 ms ±   0.7 ms    [User: 2.6 ms, System: 3.0 ms]
+  Range (min … max):     5.4 ms …   8.0 ms    20 runs
+ 
+Benchmark #3: cat xcc-with-dancing-cells_graceful5.txt | timeout 10m ../bin/xcc-with-dancing-cells || [ $? = 124 ]
+  Time (mean ± σ):       6.0 ms ±   0.5 ms    [User: 2.6 ms, System: 3.0 ms]
+  Range (min … max):     5.4 ms …   7.1 ms    20 runs
+ 
+Summary
+  'cat xcc-with-dancing-cells_graceful5.txt | timeout 10m ../bin/xcc-with-dancing-cells || [ $? = 124 ]' ran
+    1.00 ± 0.14 times faster than 'cat dlx2_graceful5.txt | timeout 10m ../bin/dlx2 || [ $? = 124 ]'
+    1.02 ± 0.15 times faster than 'cat xcc-with-sparse-sets_graceful5.txt | timeout 10m ../bin/xcc-with-sparse-sets || [ $? = 124 ]'
+Benchmark #1: cat dlx2_graceful7.txt | timeout 10m ../bin/dlx2 || [ $? = 124 ]
+  Time (mean ± σ):       9.2 ms ±   0.9 ms    [User: 4.6 ms, System: 4.1 ms]
+  Range (min … max):     8.0 ms …  11.6 ms    20 runs
+ 
+Benchmark #2: cat xcc-with-sparse-sets_graceful7.txt | timeout 10m ../bin/xcc-with-sparse-sets || [ $? = 124 ]
+  Time (mean ± σ):       9.4 ms ±   1.0 ms    [User: 5.1 ms, System: 3.6 ms]
+  Range (min … max):     8.2 ms …  13.1 ms    20 runs
+ 
+Benchmark #3: cat xcc-with-dancing-cells_graceful7.txt | timeout 10m ../bin/xcc-with-dancing-cells || [ $? = 124 ]
+  Time (mean ± σ):       9.0 ms ±   0.8 ms    [User: 5.2 ms, System: 3.4 ms]
+  Range (min … max):     8.2 ms …  11.4 ms    20 runs
+ 
+Summary
+  'cat xcc-with-dancing-cells_graceful7.txt | timeout 10m ../bin/xcc-with-dancing-cells || [ $? = 124 ]' ran
+    1.02 ± 0.14 times faster than 'cat dlx2_graceful7.txt | timeout 10m ../bin/dlx2 || [ $? = 124 ]'
+    1.04 ± 0.15 times faster than 'cat xcc-with-sparse-sets_graceful7.txt | timeout 10m ../bin/xcc-with-sparse-sets || [ $? = 124 ]'
+Benchmark #1: cat dlx2_graceful9.txt | timeout 10m ../bin/dlx2 || [ $? = 124 ]
+  Time (mean ± σ):      78.7 ms ±   1.4 ms    [User: 74.0 ms, System: 3.9 ms]
+  Range (min … max):    76.7 ms …  82.3 ms    20 runs
+ 
+Benchmark #2: cat xcc-with-sparse-sets_graceful9.txt | timeout 10m ../bin/xcc-with-sparse-sets || [ $? = 124 ]
+  Time (mean ± σ):      83.3 ms ±   2.0 ms    [User: 78.4 ms, System: 4.2 ms]
+  Range (min … max):    81.0 ms …  87.8 ms    20 runs
+ 
+Benchmark #3: cat xcc-with-dancing-cells_graceful9.txt | timeout 10m ../bin/xcc-with-dancing-cells || [ $? = 124 ]
+  Time (mean ± σ):      85.5 ms ±   2.9 ms    [User: 80.5 ms, System: 4.2 ms]
+  Range (min … max):    81.6 ms …  91.5 ms    20 runs
+ 
+Summary
+  'cat dlx2_graceful9.txt | timeout 10m ../bin/dlx2 || [ $? = 124 ]' ran
+    1.06 ± 0.03 times faster than 'cat xcc-with-sparse-sets_graceful9.txt | timeout 10m ../bin/xcc-with-sparse-sets || [ $? = 124 ]'
+    1.09 ± 0.04 times faster than 'cat xcc-with-dancing-cells_graceful9.txt | timeout 10m ../bin/xcc-with-dancing-cells || [ $? = 124 ]'
+Benchmark #1: cat dlx2_langford11.txt | timeout 10m ../bin/dlx2 || [ $? = 124 ]
+  Time (mean ± σ):      88.2 ms ±   1.4 ms    [User: 83.3 ms, System: 4.0 ms]
+  Range (min … max):    85.7 ms …  90.6 ms    20 runs
+ 
+Benchmark #2: cat xcc-with-sparse-sets_langford11.txt | timeout 10m ../bin/xcc-with-sparse-sets || [ $? = 124 ]
+  Time (mean ± σ):      78.9 ms ±   2.2 ms    [User: 74.2 ms, System: 3.8 ms]
+  Range (min … max):    76.2 ms …  83.4 ms    20 runs
+ 
+Benchmark #3: cat xcc-with-dancing-cells_langford11.txt | timeout 10m ../bin/xcc-with-dancing-cells || [ $? = 124 ]
+  Time (mean ± σ):      84.3 ms ±   2.8 ms    [User: 79.4 ms, System: 4.0 ms]
+  Range (min … max):    81.3 ms …  90.3 ms    20 runs
+ 
+Summary
+  'cat xcc-with-sparse-sets_langford11.txt | timeout 10m ../bin/xcc-with-sparse-sets || [ $? = 124 ]' ran
+    1.07 ± 0.05 times faster than 'cat xcc-with-dancing-cells_langford11.txt | timeout 10m ../bin/xcc-with-dancing-cells || [ $? = 124 ]'
+    1.12 ± 0.04 times faster than 'cat dlx2_langford11.txt | timeout 10m ../bin/dlx2 || [ $? = 124 ]'
+Benchmark #1: cat dlx2_langford12.txt | timeout 10m ../bin/dlx2 || [ $? = 124 ]
+  Time (mean ± σ):     530.4 ms ±   4.1 ms    [User: 524.7 ms, System: 4.2 ms]
+  Range (min … max):   525.8 ms … 535.1 ms    5 runs
+ 
+Benchmark #2: cat xcc-with-sparse-sets_langford12.txt | timeout 10m ../bin/xcc-with-sparse-sets || [ $? = 124 ]
+  Time (mean ± σ):     472.3 ms ±   7.1 ms    [User: 467.2 ms, System: 3.9 ms]
+  Range (min … max):   462.9 ms … 483.7 ms    6 runs
+ 
+Benchmark #3: cat xcc-with-dancing-cells_langford12.txt | timeout 10m ../bin/xcc-with-dancing-cells || [ $? = 124 ]
+  Time (mean ± σ):     505.2 ms ±  13.8 ms    [User: 499.8 ms, System: 4.0 ms]
+  Range (min … max):   496.9 ms … 529.3 ms    5 runs
+ 
+  Warning: The first benchmarking run for this command was significantly slower than the rest (529.3 ms). This could be caused by (filesystem) caches that were not filled until after the first run. You should consider using the '--warmup' option to fill those caches before the actual benchmark. Alternatively, use the '--prepare' option to clear the caches before each timing run.
+ 
+Summary
+  'cat xcc-with-sparse-sets_langford12.txt | timeout 10m ../bin/xcc-with-sparse-sets || [ $? = 124 ]' ran
+    1.07 ± 0.03 times faster than 'cat xcc-with-dancing-cells_langford12.txt | timeout 10m ../bin/xcc-with-dancing-cells || [ $? = 124 ]'
+    1.12 ± 0.02 times faster than 'cat dlx2_langford12.txt | timeout 10m ../bin/dlx2 || [ $? = 124 ]'
+Benchmark #1: cat dlx2_langford15.txt | timeout 10m ../bin/dlx2 || [ $? = 124 ]
+  Time (mean ± σ):     220930.8 ms ± 652.3 ms    [User: 220.414 s, System: 0.218 s]
+  Range (min … max):   220469.5 ms … 221392.1 ms    2 runs
+ 
+Benchmark #2: cat xcc-with-sparse-sets_langford15.txt | timeout 10m ../bin/xcc-with-sparse-sets || [ $? = 124 ]
+  Time (mean ± σ):     196582.8 ms ± 1303.9 ms    [User: 196.286 s, System: 0.110 s]
+  Range (min … max):   195660.7 ms … 197504.8 ms    2 runs
+ 
+Benchmark #3: cat xcc-with-dancing-cells_langford15.txt | timeout 10m ../bin/xcc-with-dancing-cells || [ $? = 124 ]
+  Time (mean ± σ):     204471.4 ms ± 1223.4 ms    [User: 204.269 s, System: 0.069 s]
+  Range (min … max):   203606.3 ms … 205336.5 ms    2 runs
+ 
+Summary
+  'cat xcc-with-sparse-sets_langford15.txt | timeout 10m ../bin/xcc-with-sparse-sets || [ $? = 124 ]' ran
+    1.04 ± 0.01 times faster than 'cat xcc-with-dancing-cells_langford15.txt | timeout 10m ../bin/xcc-with-dancing-cells || [ $? = 124 ]'
+    1.12 ± 0.01 times faster than 'cat dlx2_langford15.txt | timeout 10m ../bin/dlx2 || [ $? = 124 ]'
+Benchmark #1: cat dlx2_menage11.txt | timeout 10m ../bin/dlx2 || [ $? = 124 ]
+  Time (mean ± σ):     476.9 ms ±   1.7 ms    [User: 472.4 ms, System: 3.5 ms]
+  Range (min … max):   474.7 ms … 479.5 ms    6 runs
+ 
+Benchmark #2: cat xcc-with-sparse-sets_menage11.txt | timeout 10m ../bin/xcc-with-sparse-sets || [ $? = 124 ]
+  Time (mean ± σ):     753.7 ms ±   4.8 ms    [User: 748.9 ms, System: 3.5 ms]
+  Range (min … max):   748.4 ms … 757.9 ms    3 runs
+ 
+Benchmark #3: cat xcc-with-dancing-cells_menage11.txt | timeout 10m ../bin/xcc-with-dancing-cells || [ $? = 124 ]
+  Time (mean ± σ):     788.9 ms ±   5.4 ms    [User: 784.1 ms, System: 3.7 ms]
+  Range (min … max):   783.0 ms … 793.3 ms    3 runs
+ 
+Summary
+  'cat dlx2_menage11.txt | timeout 10m ../bin/dlx2 || [ $? = 124 ]' ran
+    1.58 ± 0.01 times faster than 'cat xcc-with-sparse-sets_menage11.txt | timeout 10m ../bin/xcc-with-sparse-sets || [ $? = 124 ]'
+    1.65 ± 0.01 times faster than 'cat xcc-with-dancing-cells_menage11.txt | timeout 10m ../bin/xcc-with-dancing-cells || [ $? = 124 ]'
+Benchmark #1: cat dlx2_menage12.txt | timeout 10m ../bin/dlx2 || [ $? = 124 ]
+  Time (mean ± σ):     5610.1 ms ±  17.4 ms    [User: 5.601 s, System: 0.005 s]
+  Range (min … max):   5597.9 ms … 5622.4 ms    2 runs
+ 
+Benchmark #2: cat xcc-with-sparse-sets_menage12.txt | timeout 10m ../bin/xcc-with-sparse-sets || [ $? = 124 ]
+  Time (mean ± σ):     8967.8 ms ±   3.2 ms    [User: 8.955 s, System: 0.006 s]
+  Range (min … max):   8965.5 ms … 8970.1 ms    2 runs
+ 
+Benchmark #3: cat xcc-with-dancing-cells_menage12.txt | timeout 10m ../bin/xcc-with-dancing-cells || [ $? = 124 ]
+  Time (mean ± σ):     9300.9 ms ±  14.3 ms    [User: 9.288 s, System: 0.006 s]
+  Range (min … max):   9290.8 ms … 9311.1 ms    2 runs
+ 
+Summary
+  'cat dlx2_menage12.txt | timeout 10m ../bin/dlx2 || [ $? = 124 ]' ran
+    1.60 ± 0.00 times faster than 'cat xcc-with-sparse-sets_menage12.txt | timeout 10m ../bin/xcc-with-sparse-sets || [ $? = 124 ]'
+    1.66 ± 0.01 times faster than 'cat xcc-with-dancing-cells_menage12.txt | timeout 10m ../bin/xcc-with-dancing-cells || [ $? = 124 ]'
+Benchmark #1: cat dlx2_menage13.txt | timeout 10m ../bin/dlx2 || [ $? = 124 ]
+  Time (mean ± σ):     72586.5 ms ± 179.4 ms    [User: 72.517 s, System: 0.025 s]
+  Range (min … max):   72459.7 ms … 72713.4 ms    2 runs
+ 
+Benchmark #2: cat xcc-with-sparse-sets_menage13.txt | timeout 10m ../bin/xcc-with-sparse-sets || [ $? = 124 ]
+  Time (mean ± σ):     116816.9 ms ±  16.7 ms    [User: 116.703 s, System: 0.040 s]
+  Range (min … max):   116805.2 ms … 116828.7 ms    2 runs
+ 
+Benchmark #3: cat xcc-with-dancing-cells_menage13.txt | timeout 10m ../bin/xcc-with-dancing-cells || [ $? = 124 ]
+  Time (mean ± σ):     125074.7 ms ± 1306.1 ms    [User: 124.793 s, System: 0.100 s]
+  Range (min … max):   124151.1 ms … 125998.2 ms    2 runs
+ 
+Summary
+  'cat dlx2_menage13.txt | timeout 10m ../bin/dlx2 || [ $? = 124 ]' ran
+    1.61 ± 0.00 times faster than 'cat xcc-with-sparse-sets_menage13.txt | timeout 10m ../bin/xcc-with-sparse-sets || [ $? = 124 ]'
+    1.72 ± 0.02 times faster than 'cat xcc-with-dancing-cells_menage13.txt | timeout 10m ../bin/xcc-with-dancing-cells || [ $? = 124 ]'
+Benchmark #1: cat dlx2_menage14.txt | timeout 10m ../bin/dlx2 || [ $? = 124 ]
+  Time (mean ± σ):     600008.9 ms ±   3.5 ms    [User: 599.107 s, System: 0.354 s]
+  Range (min … max):   600006.4 ms … 600011.4 ms    2 runs
+ 
+Benchmark #2: cat xcc-with-sparse-sets_menage14.txt | timeout 10m ../bin/xcc-with-sparse-sets || [ $? = 124 ]
+  Time (mean ± σ):     600012.9 ms ±   2.9 ms    [User: 599.452 s, System: 0.187 s]
+  Range (min … max):   600010.8 ms … 600014.9 ms    2 runs
+ 
+Benchmark #3: cat xcc-with-dancing-cells_menage14.txt | timeout 10m ../bin/xcc-with-dancing-cells || [ $? = 124 ]
+  Time (mean ± σ):     600013.8 ms ±   1.3 ms    [User: 599.459 s, System: 0.191 s]
+  Range (min … max):   600012.9 ms … 600014.8 ms    2 runs
+ 
+Summary
+  'cat dlx2_menage14.txt | timeout 10m ../bin/dlx2 || [ $? = 124 ]' ran
+    1.00 ± 0.00 times faster than 'cat xcc-with-sparse-sets_menage14.txt | timeout 10m ../bin/xcc-with-sparse-sets || [ $? = 124 ]'
+    1.00 ± 0.00 times faster than 'cat xcc-with-dancing-cells_menage14.txt | timeout 10m ../bin/xcc-with-dancing-cells || [ $? = 124 ]'
+Benchmark #1: cat dlx2_menage5.txt | timeout 10m ../bin/dlx2 || [ $? = 124 ]
+  Time (mean ± σ):       6.4 ms ±   1.0 ms    [User: 2.5 ms, System: 3.4 ms]
+  Range (min … max):     5.5 ms …   9.4 ms    20 runs
+ 
+  Warning: The first benchmarking run for this command was significantly slower than the rest (9.4 ms). This could be caused by (filesystem) caches that were not filled until after the first run. You should consider using the '--warmup' option to fill those caches before the actual benchmark. Alternatively, use the '--prepare' option to clear the caches before each timing run.
+ 
+Benchmark #2: cat xcc-with-sparse-sets_menage5.txt | timeout 10m ../bin/xcc-with-sparse-sets || [ $? = 124 ]
+  Time (mean ± σ):       6.0 ms ±   0.4 ms    [User: 2.4 ms, System: 3.1 ms]
+  Range (min … max):     5.4 ms …   7.3 ms    20 runs
+ 
+Benchmark #3: cat xcc-with-dancing-cells_menage5.txt | timeout 10m ../bin/xcc-with-dancing-cells || [ $? = 124 ]
+  Time (mean ± σ):       6.0 ms ±   0.6 ms    [User: 2.5 ms, System: 3.2 ms]
+  Range (min … max):     5.3 ms …   8.3 ms    20 runs
+ 
+  Warning: Statistical outliers were detected. Consider re-running this benchmark on a quiet PC without any interferences from other programs. It might help to use the '--warmup' or '--prepare' options.
+ 
+Summary
+  'cat xcc-with-sparse-sets_menage5.txt | timeout 10m ../bin/xcc-with-sparse-sets || [ $? = 124 ]' ran
+    1.00 ± 0.13 times faster than 'cat xcc-with-dancing-cells_menage5.txt | timeout 10m ../bin/xcc-with-dancing-cells || [ $? = 124 ]'
+    1.07 ± 0.18 times faster than 'cat dlx2_menage5.txt | timeout 10m ../bin/dlx2 || [ $? = 124 ]'
+Benchmark #1: cat dlx2_queens12.txt | timeout 10m ../bin/dlx2 || [ $? = 124 ]
+  Time (mean ± σ):      69.7 ms ±   2.2 ms    [User: 65.4 ms, System: 3.4 ms]
+  Range (min … max):    68.3 ms …  77.2 ms    20 runs
+ 
+  Warning: The first benchmarking run for this command was significantly slower than the rest (73.1 ms). This could be caused by (filesystem) caches that were not filled until after the first run. You should consider using the '--warmup' option to fill those caches before the actual benchmark. Alternatively, use the '--prepare' option to clear the caches before each timing run.
+ 
+Benchmark #2: cat xcc-with-sparse-sets_queens12.txt | timeout 10m ../bin/xcc-with-sparse-sets || [ $? = 124 ]
+  Time (mean ± σ):      71.0 ms ±   1.7 ms    [User: 66.9 ms, System: 3.4 ms]
+  Range (min … max):    69.3 ms …  75.8 ms    20 runs
+ 
+Benchmark #3: cat xcc-with-dancing-cells_queens12.txt | timeout 10m ../bin/xcc-with-dancing-cells || [ $? = 124 ]
+  Time (mean ± σ):      72.2 ms ±   1.4 ms    [User: 68.2 ms, System: 3.3 ms]
+  Range (min … max):    71.0 ms …  75.8 ms    20 runs
+ 
+Summary
+  'cat dlx2_queens12.txt | timeout 10m ../bin/dlx2 || [ $? = 124 ]' ran
+    1.02 ± 0.04 times faster than 'cat xcc-with-sparse-sets_queens12.txt | timeout 10m ../bin/xcc-with-sparse-sets || [ $? = 124 ]'
+    1.04 ± 0.04 times faster than 'cat xcc-with-dancing-cells_queens12.txt | timeout 10m ../bin/xcc-with-dancing-cells || [ $? = 124 ]'
+Benchmark #1: cat dlx2_queens15.txt | timeout 10m ../bin/dlx2 || [ $? = 124 ]
+  Time (mean ± σ):     9604.2 ms ±  29.1 ms    [User: 9.592 s, System: 0.006 s]
+  Range (min … max):   9583.6 ms … 9624.8 ms    2 runs
+ 
+Benchmark #2: cat xcc-with-sparse-sets_queens15.txt | timeout 10m ../bin/xcc-with-sparse-sets || [ $? = 124 ]
+  Time (mean ± σ):     10112.0 ms ±  33.6 ms    [User: 10.098 s, System: 0.007 s]
+  Range (min … max):   10088.2 ms … 10135.7 ms    2 runs
+ 
+Benchmark #3: cat xcc-with-dancing-cells_queens15.txt | timeout 10m ../bin/xcc-with-dancing-cells || [ $? = 124 ]
+  Time (mean ± σ):     10143.7 ms ±  36.0 ms    [User: 10.129 s, System: 0.007 s]
+  Range (min … max):   10118.2 ms … 10169.1 ms    2 runs
+ 
+Summary
+  'cat dlx2_queens15.txt | timeout 10m ../bin/dlx2 || [ $? = 124 ]' ran
+    1.05 ± 0.00 times faster than 'cat xcc-with-sparse-sets_queens15.txt | timeout 10m ../bin/xcc-with-sparse-sets || [ $? = 124 ]'
+    1.06 ± 0.00 times faster than 'cat xcc-with-dancing-cells_queens15.txt | timeout 10m ../bin/xcc-with-dancing-cells || [ $? = 124 ]'
+Benchmark #1: cat dlx2_queens2.txt | timeout 10m ../bin/dlx2 || [ $? = 124 ]
+  Time (mean ± σ):       6.0 ms ±   0.2 ms    [User: 2.4 ms, System: 3.1 ms]
+  Range (min … max):     5.5 ms …   6.3 ms    20 runs
+ 
+Benchmark #2: cat xcc-with-sparse-sets_queens2.txt | timeout 10m ../bin/xcc-with-sparse-sets || [ $? = 124 ]
+  Time (mean ± σ):       6.0 ms ±   0.4 ms    [User: 2.4 ms, System: 3.2 ms]
+  Range (min … max):     5.5 ms …   6.8 ms    20 runs
+ 
+Benchmark #3: cat xcc-with-dancing-cells_queens2.txt | timeout 10m ../bin/xcc-with-dancing-cells || [ $? = 124 ]
+  Time (mean ± σ):       6.3 ms ±   1.1 ms    [User: 2.6 ms, System: 3.4 ms]
+  Range (min … max):     5.6 ms …  10.3 ms    20 runs
+ 
+  Warning: Statistical outliers were detected. Consider re-running this benchmark on a quiet PC without any interferences from other programs. It might help to use the '--warmup' or '--prepare' options.
+ 
+Summary
+  'cat dlx2_queens2.txt | timeout 10m ../bin/dlx2 || [ $? = 124 ]' ran
+    1.01 ± 0.07 times faster than 'cat xcc-with-sparse-sets_queens2.txt | timeout 10m ../bin/xcc-with-sparse-sets || [ $? = 124 ]'
+    1.05 ± 0.19 times faster than 'cat xcc-with-dancing-cells_queens2.txt | timeout 10m ../bin/xcc-with-dancing-cells || [ $? = 124 ]'
+Benchmark #1: cat dlx2_queens4.txt | timeout 10m ../bin/dlx2 || [ $? = 124 ]
+  Time (mean ± σ):       6.1 ms ±   0.3 ms    [User: 2.4 ms, System: 3.2 ms]
+  Range (min … max):     5.6 ms …   6.8 ms    20 runs
+ 
+Benchmark #2: cat xcc-with-sparse-sets_queens4.txt | timeout 10m ../bin/xcc-with-sparse-sets || [ $? = 124 ]
+  Time (mean ± σ):       6.1 ms ±   0.6 ms    [User: 2.5 ms, System: 3.1 ms]
+  Range (min … max):     5.5 ms …   7.6 ms    20 runs
+ 
+Benchmark #3: cat xcc-with-dancing-cells_queens4.txt | timeout 10m ../bin/xcc-with-dancing-cells || [ $? = 124 ]
+  Time (mean ± σ):       6.0 ms ±   0.5 ms    [User: 2.5 ms, System: 3.1 ms]
+  Range (min … max):     5.4 ms …   7.4 ms    20 runs
+ 
+  Warning: Statistical outliers were detected. Consider re-running this benchmark on a quiet PC without any interferences from other programs. It might help to use the '--warmup' or '--prepare' options.
+ 
+Summary
+  'cat xcc-with-dancing-cells_queens4.txt | timeout 10m ../bin/xcc-with-dancing-cells || [ $? = 124 ]' ran
+    1.01 ± 0.12 times faster than 'cat xcc-with-sparse-sets_queens4.txt | timeout 10m ../bin/xcc-with-sparse-sets || [ $? = 124 ]'
+    1.01 ± 0.10 times faster than 'cat dlx2_queens4.txt | timeout 10m ../bin/dlx2 || [ $? = 124 ]'
+Benchmark #1: cat dlx2_queens8.txt | timeout 10m ../bin/dlx2 || [ $? = 124 ]
+  Time (mean ± σ):       6.2 ms ±   0.3 ms    [User: 2.6 ms, System: 3.1 ms]
+  Range (min … max):     5.8 ms …   7.1 ms    20 runs
+ 
+Benchmark #2: cat xcc-with-sparse-sets_queens8.txt | timeout 10m ../bin/xcc-with-sparse-sets || [ $? = 124 ]
+  Time (mean ± σ):       6.4 ms ±   0.5 ms    [User: 2.8 ms, System: 3.2 ms]
+  Range (min … max):     5.8 ms …   7.7 ms    20 runs
+ 
+Benchmark #3: cat xcc-with-dancing-cells_queens8.txt | timeout 10m ../bin/xcc-with-dancing-cells || [ $? = 124 ]
+  Time (mean ± σ):       6.4 ms ±   0.6 ms    [User: 2.8 ms, System: 3.2 ms]
+  Range (min … max):     5.7 ms …   7.7 ms    20 runs
+ 
+Summary
+  'cat dlx2_queens8.txt | timeout 10m ../bin/dlx2 || [ $? = 124 ]' ran
+    1.03 ± 0.10 times faster than 'cat xcc-with-sparse-sets_queens8.txt | timeout 10m ../bin/xcc-with-sparse-sets || [ $? = 124 ]'
+    1.03 ± 0.10 times faster than 'cat xcc-with-dancing-cells_queens8.txt | timeout 10m ../bin/xcc-with-dancing-cells || [ $? = 124 ]'
+Benchmark #1: cat dlx2_sudoku4x4_1.txt | timeout 10m ../bin/dlx2 || [ $? = 124 ]
+  Time (mean ± σ):       6.2 ms ±   0.7 ms    [User: 2.4 ms, System: 3.1 ms]
+  Range (min … max):     5.7 ms …   8.9 ms    20 runs
+ 
+  Warning: The first benchmarking run for this command was significantly slower than the rest (8.9 ms). This could be caused by (filesystem) caches that were not filled until after the first run. You should consider using the '--warmup' option to fill those caches before the actual benchmark. Alternatively, use the '--prepare' option to clear the caches before each timing run.
+ 
+Benchmark #2: cat xcc-with-sparse-sets_sudoku4x4_1.txt | timeout 10m ../bin/xcc-with-sparse-sets || [ $? = 124 ]
+  Time (mean ± σ):       6.1 ms ±   0.5 ms    [User: 2.5 ms, System: 3.1 ms]
+  Range (min … max):     5.5 ms …   7.6 ms    20 runs
+ 
+Benchmark #3: cat xcc-with-dancing-cells_sudoku4x4_1.txt | timeout 10m ../bin/xcc-with-dancing-cells || [ $? = 124 ]
+  Time (mean ± σ):       6.0 ms ±   0.4 ms    [User: 2.5 ms, System: 3.0 ms]
+  Range (min … max):     5.5 ms …   6.8 ms    20 runs
+ 
+Summary
+  'cat xcc-with-dancing-cells_sudoku4x4_1.txt | timeout 10m ../bin/xcc-with-dancing-cells || [ $? = 124 ]' ran
+    1.02 ± 0.11 times faster than 'cat xcc-with-sparse-sets_sudoku4x4_1.txt | timeout 10m ../bin/xcc-with-sparse-sets || [ $? = 124 ]'
+    1.03 ± 0.13 times faster than 'cat dlx2_sudoku4x4_1.txt | timeout 10m ../bin/dlx2 || [ $? = 124 ]'
+Benchmark #1: cat dlx2_sudoku4x4_all.txt | timeout 10m ../bin/dlx2 || [ $? = 124 ]
+  Time (mean ± σ):       6.3 ms ±   0.3 ms    [User: 2.7 ms, System: 3.1 ms]
+  Range (min … max):     6.0 ms …   6.8 ms    20 runs
+ 
+Benchmark #2: cat xcc-with-sparse-sets_sudoku4x4_all.txt | timeout 10m ../bin/xcc-with-sparse-sets || [ $? = 124 ]
+  Time (mean ± σ):       6.5 ms ±   0.7 ms    [User: 2.8 ms, System: 3.2 ms]
+  Range (min … max):     5.7 ms …   8.2 ms    20 runs
+ 
+Benchmark #3: cat xcc-with-dancing-cells_sudoku4x4_all.txt | timeout 10m ../bin/xcc-with-dancing-cells || [ $? = 124 ]
+  Time (mean ± σ):       6.4 ms ±   0.5 ms    [User: 2.8 ms, System: 3.1 ms]
+  Range (min … max):     5.9 ms …   7.9 ms    20 runs
+ 
+Summary
+  'cat dlx2_sudoku4x4_all.txt | timeout 10m ../bin/dlx2 || [ $? = 124 ]' ran
+    1.00 ± 0.10 times faster than 'cat xcc-with-dancing-cells_sudoku4x4_all.txt | timeout 10m ../bin/xcc-with-dancing-cells || [ $? = 124 ]'
+    1.02 ± 0.11 times faster than 'cat xcc-with-sparse-sets_sudoku4x4_all.txt | timeout 10m ../bin/xcc-with-sparse-sets || [ $? = 124 ]'
+Benchmark #1: cat dlx2_sudoku_a.txt | timeout 10m ../bin/dlx2 || [ $? = 124 ]
+  Time (mean ± σ):       6.5 ms ±   0.4 ms    [User: 2.7 ms, System: 3.2 ms]
+  Range (min … max):     5.8 ms …   7.3 ms    20 runs
+ 
+Benchmark #2: cat xcc-with-sparse-sets_sudoku_a.txt | timeout 10m ../bin/xcc-with-sparse-sets || [ $? = 124 ]
+  Time (mean ± σ):       6.3 ms ±   0.5 ms    [User: 2.6 ms, System: 3.2 ms]
+  Range (min … max):     5.6 ms …   7.7 ms    20 runs
+ 
+Benchmark #3: cat xcc-with-dancing-cells_sudoku_a.txt | timeout 10m ../bin/xcc-with-dancing-cells || [ $? = 124 ]
+  Time (mean ± σ):       6.1 ms ±   0.5 ms    [User: 2.6 ms, System: 3.1 ms]
+  Range (min … max):     5.5 ms …   7.6 ms    20 runs
+ 
+Summary
+  'cat xcc-with-dancing-cells_sudoku_a.txt | timeout 10m ../bin/xcc-with-dancing-cells || [ $? = 124 ]' ran
+    1.04 ± 0.12 times faster than 'cat xcc-with-sparse-sets_sudoku_a.txt | timeout 10m ../bin/xcc-with-sparse-sets || [ $? = 124 ]'
+    1.06 ± 0.10 times faster than 'cat dlx2_sudoku_a.txt | timeout 10m ../bin/dlx2 || [ $? = 124 ]'
+Benchmark #1: cat dlx2_sudoku_b.txt | timeout 10m ../bin/dlx2 || [ $? = 124 ]
+  Time (mean ± σ):       7.0 ms ±   0.3 ms    [User: 3.2 ms, System: 3.2 ms]
+  Range (min … max):     6.3 ms …   7.8 ms    20 runs
+ 
+Benchmark #2: cat xcc-with-sparse-sets_sudoku_b.txt | timeout 10m ../bin/xcc-with-sparse-sets || [ $? = 124 ]
+  Time (mean ± σ):       6.7 ms ±   0.5 ms    [User: 2.9 ms, System: 3.3 ms]
+  Range (min … max):     6.1 ms …   7.6 ms    20 runs
+ 
+Benchmark #3: cat xcc-with-dancing-cells_sudoku_b.txt | timeout 10m ../bin/xcc-with-dancing-cells || [ $? = 124 ]
+  Time (mean ± σ):       6.4 ms ±   0.6 ms    [User: 2.7 ms, System: 3.1 ms]
+  Range (min … max):     5.7 ms …   8.2 ms    20 runs
+ 
+Summary
+  'cat xcc-with-dancing-cells_sudoku_b.txt | timeout 10m ../bin/xcc-with-dancing-cells || [ $? = 124 ]' ran
+    1.05 ± 0.12 times faster than 'cat xcc-with-sparse-sets_sudoku_b.txt | timeout 10m ../bin/xcc-with-sparse-sets || [ $? = 124 ]'
+    1.09 ± 0.11 times faster than 'cat dlx2_sudoku_b.txt | timeout 10m ../bin/dlx2 || [ $? = 124 ]'
+Benchmark #1: cat dlx2_sudoku_c.txt | timeout 10m ../bin/dlx2 || [ $? = 124 ]
+  Time (mean ± σ):       7.0 ms ±   0.3 ms    [User: 3.2 ms, System: 3.3 ms]
+  Range (min … max):     6.7 ms …   8.0 ms    20 runs
+ 
+Benchmark #2: cat xcc-with-sparse-sets_sudoku_c.txt | timeout 10m ../bin/xcc-with-sparse-sets || [ $? = 124 ]
+  Time (mean ± σ):       6.7 ms ±   0.3 ms    [User: 2.9 ms, System: 3.2 ms]
+  Range (min … max):     6.1 ms …   7.5 ms    20 runs
+ 
+Benchmark #3: cat xcc-with-dancing-cells_sudoku_c.txt | timeout 10m ../bin/xcc-with-dancing-cells || [ $? = 124 ]
+  Time (mean ± σ):       6.5 ms ±   0.4 ms    [User: 2.8 ms, System: 3.3 ms]
+  Range (min … max):     6.0 ms …   7.2 ms    20 runs
+ 
+Summary
+  'cat xcc-with-dancing-cells_sudoku_c.txt | timeout 10m ../bin/xcc-with-dancing-cells || [ $? = 124 ]' ran
+    1.03 ± 0.08 times faster than 'cat xcc-with-sparse-sets_sudoku_c.txt | timeout 10m ../bin/xcc-with-sparse-sets || [ $? = 124 ]'
+    1.08 ± 0.08 times faster than 'cat dlx2_sudoku_c.txt | timeout 10m ../bin/dlx2 || [ $? = 124 ]'
