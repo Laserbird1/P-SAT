@@ -1,57 +1,57 @@
 {
   "results": [
     {
-      "command": "cat dlx2_cluster6.txt | timeout 10m ../bin/dlx2",
-      "mean": 60.233586113615004,
-      "stddev": 0.2742887085230196,
-      "median": 60.282535912114994,
-      "user": 60.136178429999994,
-      "system": 0.044587304999999994,
-      "min": 59.569989666615,
-      "max": 60.500440652615,
+      "command": "cat dlx2_cluster6.txt | timeout 10m ../bin/dlx2 || [ $? = 124 ]",
+      "mean": 60.873950953990004,
+      "stddev": 0.07136990033573018,
+      "median": 60.873950953990004,
+      "user": 60.705425309999995,
+      "system": 0.06919748,
+      "min": 60.82348481349,
+      "max": 60.92441709449,
       "times": [
-        60.500440652615,
-        60.211264847615,
-        60.418865125615,
-        60.485657665615,
-        60.353665928615,
-        60.219583245615,
-        60.193305290615,
-        60.345488578615,
-        60.037600134615,
-        59.569989666615
+        60.82348481349,
+        60.92441709449
       ],
       "parameters": {
         "ex": "dlx2",
-        "file": "cluster6.txt",
-        "path": "../instances/cluster6.txt"
+        "file": "cluster6.txt"
       }
     },
     {
-      "command": "cat xcc-with-sparse-sets_cluster6.txt | timeout 10m ../bin/xcc-with-sparse-sets",
-      "mean": 63.636722624315006,
-      "stddev": 0.8630355651425164,
-      "median": 63.932827101615004,
-      "user": 63.58492443,
-      "system": 0.023802405,
-      "min": 61.785714077615,
-      "max": 64.30403653161501,
+      "command": "cat xcc-with-sparse-sets_cluster6.txt | timeout 10m ../bin/xcc-with-sparse-sets || [ $? = 124 ]",
+      "mean": 63.937191127489996,
+      "stddev": 0.7130451714151865,
+      "median": 63.937191127489996,
+      "user": 63.77228330999999,
+      "system": 0.07050348000000001,
+      "min": 63.43299205149,
+      "max": 64.44139020349,
       "times": [
-        63.749479537615,
-        64.30403653161501,
-        63.986422181615,
-        64.265178073615,
-        64.236558910615,
-        62.338868399615,
-        63.879232021615,
-        63.754949660615,
-        64.06678684861501,
-        61.785714077615
+        64.44139020349,
+        63.43299205149
       ],
       "parameters": {
         "ex": "xcc-with-sparse-sets",
-        "file": "cluster6.txt",
-        "path": "../instances/cluster6.txt"
+        "file": "cluster6.txt"
+      }
+    },
+    {
+      "command": "cat xcc-with-dancing-cells_cluster6.txt | timeout 10m ../bin/xcc-with-dancing-cells || [ $? = 124 ]",
+      "mean": 68.89327241499001,
+      "stddev": 0.008992129151023818,
+      "median": 68.89327241499001,
+      "user": 68.72597130999999,
+      "system": 0.07411048,
+      "min": 68.88691401949,
+      "max": 68.89963081049,
+      "times": [
+        68.88691401949,
+        68.89963081049
+      ],
+      "parameters": {
+        "ex": "xcc-with-dancing-cells",
+        "file": "cluster6.txt"
       }
     }
   ]

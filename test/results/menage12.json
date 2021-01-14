@@ -1,57 +1,57 @@
 {
   "results": [
     {
-      "command": "cat dlx2_menage12.txt | timeout 10m ../bin/dlx2",
-      "mean": 5.600897102350001,
-      "stddev": 0.05371228807679621,
-      "median": 5.58373778465,
-      "user": 5.592944035,
-      "system": 0.004873885,
-      "min": 5.5677469446500005,
-      "max": 5.749699998650001,
+      "command": "cat dlx2_menage12.txt | timeout 10m ../bin/dlx2 || [ $? = 124 ]",
+      "mean": 5.610141237360001,
+      "stddev": 0.017362446276358502,
+      "median": 5.610141237360001,
+      "user": 5.600509705,
+      "system": 0.005226854999999999,
+      "min": 5.59786413386,
+      "max": 5.62241834086,
       "times": [
-        5.571533022650001,
-        5.58098042065,
-        5.749699998650001,
-        5.60337182265,
-        5.589777052650001,
-        5.5798399206500005,
-        5.5677469446500005,
-        5.57499160365,
-        5.6045350886500005,
-        5.58649514865
+        5.62241834086,
+        5.59786413386
       ],
       "parameters": {
         "ex": "dlx2",
-        "file": "menage12.txt",
-        "path": "../instances/menage12.txt"
+        "file": "menage12.txt"
       }
     },
     {
-      "command": "cat xcc-with-sparse-sets_menage12.txt | timeout 10m ../bin/xcc-with-sparse-sets",
-      "mean": 8.97905201655,
-      "stddev": 0.07186055305139163,
-      "median": 8.96495791065,
-      "user": 8.968486335,
-      "system": 0.005758284999999999,
-      "min": 8.89750092465,
-      "max": 9.142233690649999,
+      "command": "cat xcc-with-sparse-sets_menage12.txt | timeout 10m ../bin/xcc-with-sparse-sets || [ $? = 124 ]",
+      "mean": 8.967816471359999,
+      "stddev": 0.0032314914250507233,
+      "median": 8.967816471359999,
+      "user": 8.954694205,
+      "system": 0.006370855,
+      "min": 8.96553146186,
+      "max": 8.970101480859999,
       "times": [
-        8.968792870649999,
-        9.030133751649998,
-        8.89750092465,
-        9.142233690649999,
-        8.91443748765,
-        8.950182830649998,
-        8.92292666865,
-        8.96112295065,
-        8.97939405965,
-        9.023794930649998
+        8.970101480859999,
+        8.96553146186
       ],
       "parameters": {
         "ex": "xcc-with-sparse-sets",
-        "file": "menage12.txt",
-        "path": "../instances/menage12.txt"
+        "file": "menage12.txt"
+      }
+    },
+    {
+      "command": "cat xcc-with-dancing-cells_menage12.txt | timeout 10m ../bin/xcc-with-dancing-cells || [ $? = 124 ]",
+      "mean": 9.300949274359999,
+      "stddev": 0.014335217494295583,
+      "median": 9.300949274359999,
+      "user": 9.288439704999998,
+      "system": 0.006142854999999999,
+      "min": 9.290812744859998,
+      "max": 9.31108580386,
+      "times": [
+        9.290812744859998,
+        9.31108580386
+      ],
+      "parameters": {
+        "ex": "xcc-with-dancing-cells",
+        "file": "menage12.txt"
       }
     }
   ]
