@@ -2,6 +2,7 @@ bin/*
 **/*.o
 **/.DS_Store
 src/cars/node_modules/
+src/cars/instances/
 .vscode/
 knuth/cweb/
 knuth/sgb/
@@ -11,3 +12,4 @@ test/results_tmp/*
 test/.ipynb_checkpoints/*
 test/samples/*
 test/env/*
+test/results_car/

@@ -5,10 +5,10 @@
 
 nwarmup=1
 minruns=2
-destdir=results_tmp
+destdir=results_car
 mkdir ${destdir} 2> /dev/null
 
-for path in ../instances/cars2/*.txt ;
+for path in ../src/cars/instances/ok/*.txt ;
 do
     name=$(basename $path)
     jsonname=$(echo $name | cut -f1 -d'.').json
