@@ -1,0 +1,58 @@
+{
+  "results": [
+    {
+      "command": "cat dlx2_pentomino_10_6_s.txt | timeout 10m ../bin/dlx2 || [ $? = 124 ]",
+      "mean": 7.763214226215,
+      "stddev": 0.031860964424914213,
+      "median": 7.763214226215,
+      "user": 7.727976719999999,
+      "system": 0.019815265000000002,
+      "min": 7.740685122215,
+      "max": 7.785743330215,
+      "times": [
+        7.740685122215,
+        7.785743330215
+      ],
+      "parameters": {
+        "ex": "dlx2",
+        "file": "pentomino_10_6_s.txt"
+      }
+    },
+    {
+      "command": "cat xcc-with-sparse-sets_pentomino_10_6_s.txt | timeout 10m ../bin/xcc-with-sparse-sets || [ $? = 124 ]",
+      "mean": 8.256383785215,
+      "stddev": 0.12997724027731164,
+      "median": 8.256383785215,
+      "user": 8.216982719999999,
+      "system": 0.018151265,
+      "min": 8.164475997215,
+      "max": 8.348291573215,
+      "times": [
+        8.164475997215,
+        8.348291573215
+      ],
+      "parameters": {
+        "ex": "xcc-with-sparse-sets",
+        "file": "pentomino_10_6_s.txt"
+      }
+    },
+    {
+      "command": "cat xcc-with-dancing-cells_pentomino_10_6_s.txt | timeout 10m ../bin/xcc-with-dancing-cells || [ $? = 124 ]",
+      "mean": 8.716910566214999,
+      "stddev": 0.1797774344444637,
+      "median": 8.716910566214999,
+      "user": 8.68718122,
+      "system": 0.015513265000000002,
+      "min": 8.589788723215,
+      "max": 8.844032409215,
+      "times": [
+        8.844032409215,
+        8.589788723215
+      ],
+      "parameters": {
+        "ex": "xcc-with-dancing-cells",
+        "file": "pentomino_10_6_s.txt"
+      }
+    }
+  ]
+}

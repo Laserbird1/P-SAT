@@ -5,7 +5,7 @@ CC=gcc
 CPP=g++
 
 CCFLAGS=-O3
-CPPFLAGS=-O3 -std=c++14
+CPPFLAGS=-g -std=c++14
 
 SRC_FILES=$(wildcard $(SRC)/*.c $(SRC)/*.cpp)
 _EXEC=$(SRC_FILES:%.c=%)
@@ -33,8 +33,6 @@ list:
 	@echo SRCFILES :=$(SRC_FILES)
 	@echo
 	@echo EXEC := $(EXEC)
-	@echo
-	@echo KNUTH := $(KNUTH)
 
 clean:
 	rm -rf $(BIN)
@@ -44,10 +42,10 @@ clean:
 benchmarks:
 	cd test && sh instances.sh
 
-test/analyse.py: test/analyse.ipynb
+convert:
 	jupyter nbconvert --to script test/analyse.ipynb
-
-analyse: test/analyse.py
+	
+analyse:
 	cd test && python3 analyse.py
 
 # rules for making instances from sources
