@@ -6,7 +6,7 @@
 nwarmup=1
 minruns=2
 
-destdir=results_tmp
+destdir=results
 srcdir=../instances
 
 mkdir ${destdir} 2> /dev/null
