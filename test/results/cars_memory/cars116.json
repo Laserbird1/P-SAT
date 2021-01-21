@@ -1,0 +1,32 @@
+{
+ "results" : [
+    {
+      "max_resident_set_size_kb" : [
+        1952,
+        1984,
+        2052,
+        2056,
+        1988
+      ],
+      "average_max_resident_set_size_kb" : 2006,
+      "parameters" : {
+        "ex" : "dlx2",
+        "file" : "cars116.txt"
+      }
+    },
+    {
+      "max_resident_set_size_kb" : [
+        11176,
+        11148,
+        11108,
+        11204,
+        11088
+      ],
+      "average_max_resident_set_size_kb" : 11144,
+      "parameters" : {
+        "ex" : "xcc-with-sparse-set",
+        "file" : "cars116.txt"
+      }
+    }
+  ]
+}

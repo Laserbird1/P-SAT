@@ -1,0 +1,32 @@
+{
+ "results" : [
+    {
+      "max_resident_set_size_kb" : [
+        2008,
+        1860,
+        1940,
+        2020,
+        1912
+      ],
+      "average_max_resident_set_size_kb" : 1948,
+      "parameters" : {
+        "ex" : "dlx2",
+        "file" : "cars531.txt"
+      }
+    },
+    {
+      "max_resident_set_size_kb" : [
+        6024,
+        6012,
+        5928,
+        6008,
+        5936
+      ],
+      "average_max_resident_set_size_kb" : 5981,
+      "parameters" : {
+        "ex" : "xcc-with-sparse-set",
+        "file" : "cars531.txt"
+      }
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "results": [
+    {
+      "command": "cat dlx2_cars314.txt | timeout 300s ../bin/dlx2 `if [ dlx2 = dlx2 ]; then echo t1; else echo -f; fi;`|| [ $? = 124 ]",
+      "mean": 1.5645475585600002,
+      "stddev": 0.003779463118025063,
+      "median": 1.5645475585600002,
+      "user": 1.556183165,
+      "system": 0.060421724999999996,
+      "min": 1.56187507456,
+      "max": 1.56722004256,
+      "times": [
+        1.56722004256,
+        1.56187507456
+      ],
+      "parameters": {
+        "ex": "dlx2",
+        "file": "cars314.txt"
+      }
+    },
+    {
+      "command": "cat xcc-with-sparse-sets_cars314.txt | timeout 300s ../bin/xcc-with-sparse-sets `if [ xcc-with-sparse-sets = dlx2 ]; then echo t1; else echo -f; fi;`|| [ $? = 124 ]",
+      "mean": 0.31267016789333335,
+      "stddev": 0.005121021771606239,
+      "median": 0.31403695556,
+      "user": 0.18838816499999997,
+      "system": 0.12808300277777782,
+      "min": 0.30495583056,
+      "max": 0.32099509356,
+      "times": [
+        0.30495583056,
+        0.31162056856,
+        0.30644610256,
+        0.30915604356,
+        0.31530887856,
+        0.31507854256,
+        0.31403695556,
+        0.32099509356,
+        0.31643349556
+      ],
+      "parameters": {
+        "ex": "xcc-with-sparse-sets",
+        "file": "cars314.txt"
+      }
+    }
+  ]
+}

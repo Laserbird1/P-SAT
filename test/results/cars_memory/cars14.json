@@ -1,0 +1,32 @@
+{
+ "results" : [
+    {
+      "max_resident_set_size_kb" : [
+        14604,
+        14528,
+        14620,
+        14552,
+        14540
+      ],
+      "average_max_resident_set_size_kb" : 14568,
+      "parameters" : {
+        "ex" : "dlx2",
+        "file" : "cars14.txt"
+      }
+    },
+    {
+      "max_resident_set_size_kb" : [
+        500184,
+        500196,
+        500272,
+        500288,
+        500176
+      ],
+      "average_max_resident_set_size_kb" : 500223,
+      "parameters" : {
+        "ex" : "xcc-with-sparse-set",
+        "file" : "cars14.txt"
+      }
+    }
+  ]
+}

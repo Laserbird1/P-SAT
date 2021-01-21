@@ -1,0 +1,49 @@
+{
+  "results": [
+    {
+      "command": "cat dlx2_cars654.txt | timeout 300s ../bin/dlx2 `if [ dlx2 = dlx2 ]; then echo t1; else echo -f; fi;`|| [ $? = 124 ]",
+      "mean": 1.091507749475,
+      "stddev": 0.00939705031374462,
+      "median": 1.091507749475,
+      "user": 1.0907705449999998,
+      "system": 0.034076425,
+      "min": 1.084863031475,
+      "max": 1.098152467475,
+      "times": [
+        1.098152467475,
+        1.084863031475
+      ],
+      "parameters": {
+        "ex": "dlx2",
+        "file": "cars654.txt"
+      }
+    },
+    {
+      "command": "cat xcc-with-sparse-sets_cars654.txt | timeout 300s ../bin/xcc-with-sparse-sets `if [ xcc-with-sparse-sets = dlx2 ]; then echo t1; else echo -f; fi;`|| [ $? = 124 ]",
+      "mean": 0.25109033647499995,
+      "stddev": 0.004812144871286901,
+      "median": 0.251860728475,
+      "user": 0.1471538177272727,
+      "system": 0.10622965227272725,
+      "min": 0.24345032947500003,
+      "max": 0.257892905475,
+      "times": [
+        0.254387580475,
+        0.24569213747500002,
+        0.252433891475,
+        0.253164214475,
+        0.250153224475,
+        0.257084135475,
+        0.257892905475,
+        0.24345032947500003,
+        0.251860728475,
+        0.24450774547500004,
+        0.251366808475
+      ],
+      "parameters": {
+        "ex": "xcc-with-sparse-sets",
+        "file": "cars654.txt"
+      }
+    }
+  ]
+}

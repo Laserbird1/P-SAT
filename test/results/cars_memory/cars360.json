@@ -1,0 +1,32 @@
+{
+ "results" : [
+    {
+      "max_resident_set_size_kb" : [
+        1788,
+        1760,
+        1712,
+        1712,
+        1872
+      ],
+      "average_max_resident_set_size_kb" : 1768,
+      "parameters" : {
+        "ex" : "dlx2",
+        "file" : "cars360.txt"
+      }
+    },
+    {
+      "max_resident_set_size_kb" : [
+        4400,
+        4392,
+        4484,
+        4372,
+        4484
+      ],
+      "average_max_resident_set_size_kb" : 4426,
+      "parameters" : {
+        "ex" : "xcc-with-sparse-set",
+        "file" : "cars360.txt"
+      }
+    }
+  ]
+}

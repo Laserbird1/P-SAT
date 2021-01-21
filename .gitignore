@@ -12,4 +12,3 @@ test/results_tmp/*
 test/.ipynb_checkpoints/*
 test/samples/*
 test/env/*
-test/results_car/

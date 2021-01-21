@@ -1,0 +1,32 @@
+{
+ "results" : [
+    {
+      "max_resident_set_size_kb" : [
+        20860,
+        20936,
+        20852,
+        20888,
+        20888
+      ],
+      "average_max_resident_set_size_kb" : 20884,
+      "parameters" : {
+        "ex" : "dlx2",
+        "file" : "cars686.txt"
+      }
+    },
+    {
+      "max_resident_set_size_kb" : [
+        242080,
+        242096,
+        242084,
+        242008,
+        242008
+      ],
+      "average_max_resident_set_size_kb" : 242055,
+      "parameters" : {
+        "ex" : "xcc-with-sparse-set",
+        "file" : "cars686.txt"
+      }
+    }
+  ]
+}
