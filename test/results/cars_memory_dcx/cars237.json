@@ -1,0 +1,26 @@
+{
+ "results" : [
+    {
+      "max_resident_set_size_kb" : [
+        5344,
+        
+      ],
+      "average_max_resident_set_size_kb" : 1068,
+      "parameters" : {
+        "ex" : "dlx2",
+        "file" : "cars237.txt"
+      }
+    },
+    {
+      "max_resident_set_size_kb" : [
+        9272,
+        
+      ],
+      "average_max_resident_set_size_kb" : 1854,
+      "parameters" : {
+        "ex" : "xcc-with-dancing-cells",
+        "file" : "cars237.txt"
+      }
+    }
+  ]
+}

@@ -2,9 +2,9 @@
 
 nwarmup=1
 minruns=2
-destdir=results_cars_memory
+destdir=results_cars_memory_DCX
 mkdir ${destdir} 2> /dev/null
-execs=( "dlx2" "xcc-with-sparse-set" )
+execs=( "dlx2" "xcc-with-dancing-cells" )
 
 
 for path in ../src/cars/instances/ok/*.txt;
@@ -23,7 +23,7 @@ do
             wait;
         fi;
         average=0;
-        for i in {1..5};
+        for i in {1..1};
         do
             /usr/bin/time -v -o ./tmp_output.txt ../bin/${ex} $(if [ ${ex} = 'dlx2' ]; then echo 't1'; else echo '-f'; fi; ) < ${instancepath}
             wait

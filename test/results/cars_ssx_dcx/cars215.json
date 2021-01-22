@@ -1,0 +1,44 @@
+{
+  "results": [
+    {
+      "command": "cat xcc-with-sparse-set_cars215.txt | timeout 300s ../bin/xcc-with-sparse-set `if [ xcc-with-sparse-set = dlx2 ]; then echo t1; else echo -f; fi;`|| [ $? = 124 ]",
+      "mean": 0.8768450577016668,
+      "stddev": 0.010124882201789902,
+      "median": 0.871997207035,
+      "user": 0.5566675466666666,
+      "system": 0.3373518166666667,
+      "min": 0.870055569035,
+      "max": 0.8884823970350001,
+      "times": [
+        0.8884823970350001,
+        0.871997207035,
+        0.870055569035
+      ],
+      "parameters": {
+        "ex": "xcc-with-sparse-set",
+        "file": "cars215.txt"
+      }
+    },
+    {
+      "command": "cat xcc-with-dancing-cells_cars215.txt | timeout 300s ../bin/xcc-with-dancing-cells `if [ xcc-with-dancing-cells = dlx2 ]; then echo t1; else echo -f; fi;`|| [ $? = 124 ]",
+      "mean": 0.49234037503500006,
+      "stddev": 0.008622082034733266,
+      "median": 0.490687066035,
+      "user": 0.45949468,
+      "system": 0.04801755,
+      "min": 0.483884780035,
+      "max": 0.505780262035,
+      "times": [
+        0.494973278035,
+        0.483884780035,
+        0.505780262035,
+        0.490687066035,
+        0.486376489035
+      ],
+      "parameters": {
+        "ex": "xcc-with-dancing-cells",
+        "file": "cars215.txt"
+      }
+    }
+  ]
+}
